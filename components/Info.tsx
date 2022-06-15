@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 
 export default function Info() {
   return (
@@ -10,7 +10,7 @@ export default function Info() {
           strongest-jujutsu-sorcerer.jp
         </a>
       </small>
-      <img
+      <Image
         src="https://i.pinimg.com/564x/8e/de/53/8ede538fcf75a0a1bd812810edb50cb7.jpg"
         alt="Photo of a attractive, blindfolded man. His smile radiates peace - it fills you with determination and makes you believe in the better future."
         className="info__profile-pic"
