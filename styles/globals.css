@@ -14,3 +14,282 @@ a {
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #23252c;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* Typography */
+
+.container {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.info__name {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.info__btn-email,
+.info__btn-linkedin {
+  display: block;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-decoration: none;
+  padding: 0.5em 1.4em;
+  border-radius: 0.3em;
+}
+
+.info__btn-email {
+  background: #fff;
+  color: #374151;
+}
+
+.info__btn-email:hover,
+.info__btn-email:focus {
+  background: #f55a5a;
+  color: #fff;
+}
+
+.info__btn-linkedin {
+  background: #5093e2;
+  color: #fff;
+}
+
+.info__btn-linkedin:hover,
+.info__btn-linkedin:focus {
+  background: #374151;
+  color: #fff;
+}
+.info__subtitle {
+  color: lightsalmon;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.info__site {
+  font-size: 0.7rem;
+}
+
+.about__body,
+.interests__body {
+  opacity: 50%;
+  letter-spacing: 0.1px;
+}
+
+.info__site a {
+  color: #fff;
+  opacity: 50%;
+  text-decoration: none;
+}
+
+.info__site a:hover,
+.info__site a:focus {
+  color: #f55a5a;
+  background: #1a1b21;
+  text-decoration: underline;
+  border-radius: 0.5em;
+  opacity: 100%;
+}
+
+.about__title,
+.interests__title {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.info__name,
+.about__title,
+.interests__title {
+  letter-spacing: 1px;
+}
+
+.about__body,
+.interests__body {
+  font-size: 0.8rem;
+  line-height: 1.9;
+}
+
+.footer__list-item a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 50%;
+  font-size: 2rem;
+}
+
+.footer__list-item a:hover,
+.footer__list-item a:focus {
+  opacity: 90%;
+  color: #f55a5a;
+}
+
+.footer__list-item a,
+.info__site a,
+.info__btn-email,
+.info__btn-linkedin {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* Layout */
+
+.container {
+  margin: 10vmin auto;
+  width: 70%;
+  background: #1a1b21;
+  border-radius: 0.6em;
+  display: flex;
+  flex-direction: column;
+  max-width: 30em;
+  /* min-width: 25em; */
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  margin-bottom: 2.5em;
+}
+
+.info__profile-pic {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  order: -1;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  margin-bottom: 1.7em;
+  cursor: wait;
+}
+
+.info__name,
+.info__subtitle,
+.info__site {
+  text-align: center;
+}
+
+.info__name {
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+
+.info__subtitle {
+  margin-top: 0;
+  margin-bottom: 0.8em;
+}
+
+.info__site {
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.info__btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  column-gap: 1.5em;
+  width: 70%;
+  max-width: 20em;
+}
+
+.info__btn-email,
+.info__btn-linkedin {
+  flex-grow: 1;
+  width: 40%;
+  text-align: center;
+  min-width: max-content;
+  padding: 0.7em 1.6em;
+}
+
+@media (max-width: 478px) {
+  .info__btn {
+    flex-wrap: wrap;
+  }
+  .info__btn-email {
+    margin-bottom: 0.5em;
+  }
+}
+
+.info__btn span {
+  margin-left: 0.5em;
+}
+
+.about,
+.interests {
+  margin: 0 auto;
+  width: 70%;
+  max-width: 19.5em;
+}
+
+.about__title,
+.interests__title {
+  margin-top: 0;
+  margin-bottom: 0.4em;
+}
+
+.about__body {
+  margin: 0;
+}
+
+.about__body,
+.interests__body {
+  margin-top: 0;
+}
+
+.about {
+  margin-bottom: 1.5em;
+}
+
+.interests {
+  margin-bottom: 2.5em;
+}
+
+.footer {
+  display: grid;
+  min-height: 5em;
+  max-height: max-content;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: minmax(50%, 15em);
+  background: #161619;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0.3em 0.5em;
+  margin: 0;
+  background: inherit;
+}
+
+.footer__list-item {
+  margin: 0;
+  padding: 0.3em 0.7em;
+}
+
+/**************
+To-do:
+- work on link/button active states ✔
+  bonus: enable animations/transitions ✔
+- enable focus state on elements ✔
+- write appropriate text in bio ✔
+- anchor awesome links to profile & stuff ✔
+- share on discord ✔
+  bonus: maybe add some cool effects
+  cuz he's sleek ✔
+  bonus: add emoji;
+
+****************/
