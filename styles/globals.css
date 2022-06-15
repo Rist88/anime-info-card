@@ -168,7 +168,7 @@ a:visited {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
   margin-bottom: 1.7em;
-  cursor: wait;
+  cursor: crosshair;
 }
 
 .info__name,
