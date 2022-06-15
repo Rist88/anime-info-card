@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Script from "next/script";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Info from "../components/Info";
@@ -21,10 +20,6 @@ const Home: NextPage = () => {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
-        <Script
-          src="https://kit.fontawesome.com/9aa52659af.js"
-          crossOrigin="anonymous"
-        ></Script>
       </Head>
       <Info />
       <About />

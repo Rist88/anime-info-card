@@ -1,25 +1,31 @@
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
+import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function Footer() {
   return (
     <footer className="footer">
       <ul className="footer__list">
         <li className="footer__list-item">
           <a href="https://twitter.com/satorugojo_">
-            <i className="fab fa-twitter-square"></i>
+            <FontAwesomeIcon icon={faTwitterSquare} />
           </a>
         </li>
         <li className="footer__list-item">
           <a href="https://www.facebook.com/satorugojoo/">
-            <i className="fab fa-facebook-square"></i>
+            <FontAwesomeIcon icon={faFacebookSquare} />
           </a>
         </li>
         <li className="footer__list-item">
           <a href="https://www.instagram.com/gojousatoru/">
-            <i className="fab fa-instagram-square"></i>
+            <FontAwesomeIcon icon={faInstagramSquare} />
           </a>
         </li>
         <li className="footer__list-item">
           <a href="https://github.com/TNO-TheMemer/MiwaKasumi">
-            <i className="fab fa-github-square"></i>
+            <FontAwesomeIcon icon={faGithubSquare} />
           </a>
         </li>
       </ul>
